@@ -2,7 +2,6 @@
 # Creates Odoo folder structure with given module name
 
 if [ $1 = $1 ]; then # TODO: module name validation
-    echo Creating module with name $1 in $PWD
     
     mkdir $1
     cd $1
@@ -16,16 +15,17 @@ if [ $1 = $1 ]; then # TODO: module name validation
     mkdir js css less xml
     cd ../..
     
-
-    # create init and openerp manifest
+    # create init files and openerp manifest
     touch __init__.py
     echo import_models > __init__.py
     
     touch models/__init__.py
+    touch controllers/__init__.py
 
     touch __openerp__.py
     # TODO: create default manifest structure
 
+    echo Created new module $1
 else
     echo Invalid module name $1
 fi
