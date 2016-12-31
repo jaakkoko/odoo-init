@@ -22,11 +22,13 @@ if [ $1 = $1 ]; then # TODO: module name validation
     touch models/__init__.py
     touch controllers/__init__.py
 
+    # create odoo manifest and download template file from github
     touch __openerp__.py
     curl -s  https://raw.githubusercontent.com/jaakkoko/odoo-init/master/templates/manifest.py > __openerp__.py
 
-    # create .gitignore
+    # create .gitignore and download template file from github
     touch .gitignore
+    curl -s https://raw.githubusercontent.com/jaakkoko/odoo-init/master/templates/gitignore > .gitignore
 
     echo Created new module $1
 else
