@@ -7,7 +7,7 @@ Run in your Odoo addons folder:
     $ odoo-init my_new_module
 
 
-Creates new module named my_new_module with following tree structure:
+Creates module named my_new_module with tree structure:
 
     ./my_new_module
     |-- __init__.py
@@ -27,3 +27,6 @@ Creates new module named my_new_module with following tree structure:
     |       |-- less
     |       |-- xml
     |-- views/
+
+
+Default manifest file will be downloaded from templates/manifest.py in this repository.
