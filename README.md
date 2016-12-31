@@ -30,3 +30,4 @@ Creates module named my_new_module with tree structure:
 
 
 Default manifest file will be downloaded from templates/manifest.py in this repository.
+Default .gitignore file will be downloaded from templates/gitignore in this repository.
