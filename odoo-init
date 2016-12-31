@@ -25,6 +25,9 @@ if [ $1 = $1 ]; then # TODO: module name validation
     touch __openerp__.py
     # TODO: create default manifest structure
 
+    # create .gitignore
+    touch .gitignore
+
     echo Created new module $1
 else
     echo Invalid module name $1
